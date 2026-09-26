@@ -1,0 +1,12 @@
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+pydantic==2.13.5
+langdetect==1.0.9
+requests==2.34.2
+spacy==3.8.16
+
+# Модели spaCy — указаны прямыми ссылками на wheel-файлы,
+# чтобы `pip install -r requirements.txt` сразу поставил всё нужное
+# без отдельного шага `python -m spacy download`.
+ru_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/ru_core_news_sm-3.8.0/ru_core_news_sm-3.8.0-py3-none-any.whl
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
